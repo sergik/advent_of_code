@@ -42,28 +42,7 @@ def get_number_of_sides(plants: set[tuple[int, int]], grid):
       figure[p[0] - min_y + 1][p[1] - min_x + 1] = 'X'
    
    res = 0
-   # for i in range(len(figure)):
-   #    for j in range(len(figure[0])):
-   #       if(figure[i][j] == '.'):
-   #          left = (i, j - 1)
-   #          right = (i, j + 1)
-   #          up = (i - 1, j)
-   #          down = (i + 1, j)
-
-   #          if in_bound(figure, left) and figure[left[0]][left[1]] == 'X':
-   #             if not (figure[i-1][j-1] == 'X' and (figure[i-1][j]) == '.'):
-   #                res += 1
-   #          if in_bound(figure, right) and figure[right[0]][right[1]] == 'X':
-   #             if not (figure[i-1][j+1] == 'X' and (figure[i-1][j]) == '.'):
-   #                res += 1
-
-   #          if in_bound(figure, up) and figure[up[0]][up[1]] == 'X':
-   #             if not (figure[i-1][j+1] == 'X' and (figure[i][j-1]) == '.'):
-   #                res += 1
-
-   #          if in_bound(figure, down) and figure[down[0]][down[1]] == 'X':
-   #             if not (figure[i+1][j-1] == 'X' and (figure[i][j-1]) == '.'):
-   #                res += 1
+  
    for i in range(len(figure)):
       for j in range(len(figure[0])):
          if(figure[i][j] == '.'):
